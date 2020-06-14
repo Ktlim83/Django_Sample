@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info_Server</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1> Info from server</h1>
+<p>Name: {{Name}}</p>
+<p>Color: {{Favorite_color}}</p>
+<p>pets</p>
+<ul>
+    {% for pet in pets %}
+    <li>{{pet}}</li>
+    {% endfor %}
+</ul>
+<img id="jack" src="{% static "images/jack.jpg" %}" alt="My image">
+</body>
+</html>
